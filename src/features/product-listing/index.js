@@ -11,7 +11,7 @@ return <div className='product-listing'>
   props.products.map( product =>
   <ProductListItem product={product}
   addToCart={props.addToCart}
-  cart={cartItemsWithQuantity(props.cart)}
+  cartItem={props.cart.filter(cartItem => cartItem.id === product.id)[0]}
   />)
 }</div>
 }
