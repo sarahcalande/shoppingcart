@@ -1,6 +1,6 @@
 import React from 'react'
-
-
+import AddButton from './add-btn.js'
+import RemoveButton from './remove-button.js'
 
 
 export default function ProductListItem(props) {
@@ -12,10 +12,17 @@ src={`/products/${props.product.image}`}/>
 <div>{ props.product.description }</div>
 <div> $ { props.product.price }</div>
 <div>
-<button onClick={() => props.addToCart(props.product)}
-> Add to cart ({
-  (props.cartItem && props.cartItem.quantity) || 0
-})</button>
+<AddButton cartItem={props.cartItem} product ={props.product}
+addToCart={props.addToCart}
+/>
+
+{ props.cartItem ?
+<RemoveButton cartItem={props.cartItem}
+product ={props.product}
+removeFromCart={props.removeFromCart}
+/>
+: null
+}
 </div></div>
 
 
