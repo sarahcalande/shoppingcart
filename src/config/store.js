@@ -1,11 +1,13 @@
 import { createStore, combineReducers } from 'redux'
+import {reducer as formReducer} from 'redux-form'
 import cartReducer from '../features/cart/reducer.js'
 import productsReducer from '../features/product-listing/reducer.js'
 
 
 const rootReducer = combineReducers({
   cart: cartReducer,
-  products: productsReducer
+  products: productsReducer,
+  form: formReducer
 })
 
 const store = createStore(
