@@ -11,6 +11,7 @@ const Nav = ({ cart}) => <nav>
   return acc + item.quantity
 }, 0)})</NavLink></li>
 <li><NavLink to='/checkout'>Check out</NavLink></li>
+<li><NavLink to='/custom'>Custom Order</NavLink></li>
 </ul></nav>
 
 class App extends Component {
