@@ -7,11 +7,11 @@ import { connect } from 'react-redux'
 
 const Nav = ({ cart}) => <nav>
 <ul className="top-menu"><li><NavLink to='/'>Home</NavLink></li>
+<li><NavLink to='/custom'>Custom Order</NavLink></li>
 <li><NavLink to='/cart'>Cart ({cart.reduce((acc, item)=> {
   return acc + item.quantity
 }, 0)})</NavLink></li>
 <li><NavLink to='/checkout'>Check out</NavLink></li>
-<li><NavLink to='/custom'>Custom Order</NavLink></li>
 </ul></nav>
 
 class App extends Component {
