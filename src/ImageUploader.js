@@ -18,6 +18,7 @@ export default class ImageDrop extends React.Component {
     render() {
         return (
             <ImageUploader
+                withPreview={true}
                 withIcon={true}
                 buttonText='Choose images'
                 onChange={this.onDrop}
