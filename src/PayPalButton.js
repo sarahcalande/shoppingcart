@@ -4,9 +4,52 @@ import scriptLoader from 'react-async-script-loader';
 
 class PaypalButton extends React.Component {
 
-  ...
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showButton: false,
+    };
+
+    window.React = React;
+    window.ReactDOM = ReactDOM;
+  }
+
+  componentDidMount() {
+    const {
+      isScriptLoaded,
+      isScriptLoadSucceed
+    } = this.props;
+
+    if (isScriptLoaded && isScriptLoadSucceed) {
+      this.setState({ showButton: true });
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const {
+      isScriptLoaded,
+      isScriptLoadSucceed,
+    } = nextProps;
+
+    const isLoadedButWasntLoadedBefore =
+      !this.state.showButton &&
+      !this.props.isScriptLoaded &&
+      isScriptLoaded;
+
+    if (isLoadedButWasntLoadedBefore) {
+      if (isScriptLoadSucceed) {
+        this.setState({ showButton: true });
+      }
+    }
+  }
+
+
+
+
 
   render() {
+    const paypal = window.PAYPAL
     const {
       total,
       currency,
