@@ -2,10 +2,10 @@
 	"products": [
 		{
       "id": 1,
-			"image": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
-			"name": "CHECK PRINT SHIRT",
-      "description": "CHECK PRINT SHIRT",
-			"price": 110
+			"image": "./public/products/nakedcherry.png",
+			"name": "Urban Decay Naked Cherry Eyeshadow Palette",
+      "description": "This is Urban Decay's wildest way yet to look better Naked. Naked Cherry Eyeshadow Palette has a sexy vibe that's more tart than sweet. With 12 never-before-picked neutrals, this vamped-up cherry-hued palette is sure to bring out your sultriest, most tempting eye looks ever. These 12 all-new shades include of-the-moment soft mattes and sizzling metallics, ranging from creamy ivory and shimmering rose gold to the most intense black cherry. Urban Decay is addicted to Bing, a deep mauve matte that is right on trend, and can't get enough of Drunk Dial, a shimmery metallic burgundy that takes smoky looks to a smoldering climax. Because serious staying power and shadow that doesn't flake or fade out on you are non-negotiables, each shade is made from Urban Decay's mind-blowing formula that gives its velvety texture, rich color and blendability. Adorned with a row of metallic cherries, the crimson compact includes a full size mirror and double-sided brush, ready for precision application on one end and seamless blending on the other. Whether you're at the office, in between flights or getting ready at the apartment, Naked Cherry spices up everything from chill neutrals and sexy shimmers to super smoky eyes.",
+			"price": 49
 		},
 		{
 			"image": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
